@@ -1,29 +1,19 @@
-# Next.js + Jest
+# MBTI It Meeting (MIM)
 
-This example shows how to configure Jest to work with Next.js.
+## 기술 스택
 
-This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScript.
+### Core
 
-## How to Use
+- Next: latest
+- React: 18.1.0
+- typescript: 4.6.4
 
-Quickly get started using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
+### 스타일시트
 
-In your terminal, run the following command:
+- SCSS
 
-```bash
-npx create-next-app --example with-jest with-jest-app
-```
+### 테스트
 
-```bash
-yarn create next-app --example with-jest with-jest-app
-```
-
-```bash
-pnpm create next-app --example with-jest with-jest-app
-```
-
-## Run Jest Tests
-
-```bash
-npm test
-```
+- jest
+- react-testing-library
+- storyBook
