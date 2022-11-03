@@ -1,12 +1,12 @@
 const path = require("path");
 const nextConfig = {
+  images: {
+    loader: "akamai",
+    path: "/",
+  },
   sassOptions: {
-    images: {
-      loader: "akamai",
-      pathL: "/",
-    },
     includePaths: [path.join(__dirname, "styles")],
-    prependData: `@import "styles/_variables.scss"; @import "styles/_variables.scss";`,
+    prependData: `@import "styles/_variables.scss"; @import "styles/_mixins.scss";`,
   },
 };
 

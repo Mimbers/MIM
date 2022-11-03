@@ -1,0 +1,32 @@
+@mixin flexBox($direction: column, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap + px;
+  @include padding0;
+}
+
+@mixin padding0 {
+  padding: 100px;
+}
+
+$mobile: 767px;
+$tablet: 1023px;
+$desktop: 1024px;
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
