@@ -1,5 +1,8 @@
 const path = require("path");
 const nextConfig = {
+  experimental: {
+    appDir: true,
+  },
   images: {
     loader: "akamai",
     path: "/",
