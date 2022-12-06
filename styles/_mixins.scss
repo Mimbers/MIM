@@ -1,8 +1,9 @@
-@mixin flexBox($direction: column, $gap: 0) {
+@mixin flexBox($jt: flex-start, $ai: flex-start, $gap: 0, $direction: row) {
   display: flex;
   flex-direction: $direction;
+  justify-content: $jt;
+  align-items: $ai;
   gap: $gap + px;
-  @include padding0;
 }
 
 @mixin padding0 {

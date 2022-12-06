@@ -1,0 +1,10 @@
+.container {
+  background-color: $sidebar-color;
+  @include flexBox(space-between, center, 0, column);
+  padding: 20px 10px;
+}
+
+.centerNav {
+  @include flexBox(center, center, 15, column);
+  width: 100%;
+}
