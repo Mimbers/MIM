@@ -9,7 +9,6 @@ export default function RootLayout({
   return (
     <html>
       <body>
-      <Sidebar />
       <div>{children}</div>
       </body>
     </html>
