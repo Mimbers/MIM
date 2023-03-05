@@ -2,18 +2,33 @@ import Link from "next/link";
 import styles from "./Sidebar.module.scss";
 
 const Sidebar = () => {
+
   return (
     <nav className={styles.container}>
-      <div>
-        <Link href="/">아바타</Link>
+      <div className={styles.item}>
+        <div className={styles.circle}>
+          <Link href="/">🐰</Link>
+        </div>
       </div>
       <div className={styles.centerNav}>
-        <Link href="/">매칭</Link>
-        <Link href="/">친구</Link>
-        <Link href="/">mbti</Link>
+        <div className={`${styles.item} ${styles.active}`}>
+          <div className={styles.icon}>🎔</div>
+          <Link href="/">Matching</Link>
+        </div>
+        <div className={styles.item}>
+          <div className={styles.icon}>🎔</div>
+          <Link href="/">friends</Link>
+        </div>
+        <div className={styles.item}>
+          <div className={styles.icon}>🎔</div>
+          <Link href="/">MBTI</Link>
+        </div>
       </div>
-      <div>
-        <Link href="/">회원정보</Link>
+      <div className={styles.centerNav}>
+        <div className={styles.item}>
+          <div className={styles.icon}>🎔</div>
+          <Link href="/">My Page</Link>
+        </div>
       </div>
     </nav>
   );

@@ -1,4 +1,5 @@
 import "../styles/global.css";
+import Sidebar from "@/components/layout/sidebar/Sidebar";
 
 export default function RootLayout({
   children,
@@ -8,7 +9,8 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <div>{children}</div>
+      <Sidebar />
+      <div>{children}</div>
       </body>
     </html>
   );

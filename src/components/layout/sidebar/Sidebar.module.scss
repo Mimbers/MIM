@@ -1,10 +1,46 @@
 .container {
   background-color: $sidebar-color;
   @include flexBox(space-between, center, 0, column);
-  padding: 20px 10px;
+  width: $sidebar-width;
+  padding: 10px 0;
+
+  .circle {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 40px;
+    @include flexBox(center, center, 0, column);
+
+  }
+
+  .active {
+    background-color: #5a7ae2;
+  }
+
 }
 
 .centerNav {
-  @include flexBox(center, center, 15, column);
+  @include flexBox(center, center, 0, column);
   width: 100%;
+
+  .item {
+    font-size: 15px;
+
+    .icon {
+      font-size: 40px;
+    }
+  }
+}
+
+.item {
+  width: 100%;
+  height: $sidebar-width;
+  color: white;
+  font-size: 15px;
+  @include flexBox(center, center, 0, column);
+
+  &:hover {
+    background-color: #5a7ae2;
+  }
 }
